@@ -1,0 +1,116 @@
+/* 
+Imported google fonts
+
+font-family: 'ZCOOL KuaiLe', cursive; //header
+font-family: 'Merriweather', serif; //body font
+
+nice purple-ish color: #d147a3
+*/
+body{
+    background: #000;
+}
+
+header{
+    position: relative;
+    background: #000;
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    font-size: 75px;
+    letter-spacing: 5px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-align: center;
+    padding-top: 25px;
+    animation: animate 3s linear infinite;
+    float: left;
+    min-width: 900px;
+}
+
+@keyframes animate {
+  0% {
+    color: white;
+  }
+  50% {
+    color:#d147a3;
+  }
+  75% {
+    color:white;
+  }
+}
+nav{ 
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    font-size: 15px;
+    padding-top: 30px;
+    color: white;
+    letter-spacing: 4px; 
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    float: left;
+}
+nav h1{
+    min-width: 900px;
+    min-height: 100px;
+}
+article{
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    min-width: 910px;
+}
+/*button#btn{
+    background: #e699ff;
+    font-size: 25px;
+    color: white;
+    font-family: 'Merriweather';
+    border:0;
+    appearance:none;
+    
+}
+*/
+button{
+  background:#000;
+  color:#f9e6ff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  outline: inherit;
+  transition: 2s background;
+    
+ 
+}
+button:hover{
+  background:#e699cc;
+  color:#000;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background:#e699cc;
+  transition:0.6s ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:1s ease all;
+}
+
