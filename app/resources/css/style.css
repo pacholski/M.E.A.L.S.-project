@@ -6,8 +6,19 @@ font-family: 'Merriweather', serif; //body font
 
 nice purple-ish color: #d147a3
 */
+/*MOBILE*/
+@media only screen and (max-width: 800px){
+
+   
+}
+@media only screen and (max-width: 400px){
+
+}
+
 body{
     background: #000;
+    font-family: 'Merriweather', serif;
+    min-width: 950px;
 }
 
 header{
@@ -17,14 +28,14 @@ header{
     height: 100px;
     width: 100%;
     margin: 0;
-    font-size: 75px;
+    font-size: 60px;
     letter-spacing: 5px;
     font-family: 'ZCOOL KuaiLe', cursive;
     text-align: center;
     padding-top: 25px;
     animation: animate 3s linear infinite;
     float: left;
-    min-width: 900px;
+   
 }
 
 @keyframes animate {
@@ -51,6 +62,7 @@ nav{
     font-family: 'Merriweather', serif;
     float: left;
 }
+
 nav h1{
     min-width: 900px;
     min-height: 100px;
@@ -62,16 +74,7 @@ article{
     text-align: center;
     min-width: 910px;
 }
-/*button#btn{
-    background: #e699ff;
-    font-size: 25px;
-    color: white;
-    font-family: 'Merriweather';
-    border:0;
-    appearance:none;
-    
-}
-*/
+
 button{
   background:#000;
   color:#f9e6ff;
@@ -82,8 +85,8 @@ button{
   padding:0 2em;
   cursor:pointer;
   transition:800ms ease all;
-  border-top: 1px white solid;
-  border-bottom: 1px white solid;
+  border-top: 1px rgb(255,182,193) solid;
+  border-bottom: 1px rgb(255,182,193) solid;
   outline: inherit;
   transition: 2s background;
     
@@ -113,4 +116,22 @@ button:hover:before,button:hover:after{
   width:100%;
   transition:1s ease all;
 }
-
+#return{
+    float:left;
+    text-align: center;
+    color:white;
+    width: 100%;
+    height: 20%;
+    
+}
+#return h2{
+    border-left: 15px solid rgb(255,182,193); 
+    border-right: 15px solid rgb(255,182,193); 
+    border-radius:10%;
+    margin:10% 10% 15% 10%;
+    padding: 1.5em 0 1.5em 0;
+    
+}
+#return h2::first-line{color:rgb(255,182,193);}
+#return h2 hr{border: 3px solid rgb(255,182,193); border-radius:70%;margin:0 30% 0 30%;}
+#return h2 ul li{list-style-type:none; text-transform: capitalize; }
